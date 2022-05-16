@@ -39,22 +39,19 @@ function listTitles(fantShelf) {
 // access title property with dot notation
 
 function searchShelf(shelf, bookTitle) {
-var output = null;
+var onShelf = false;
   for (var i = 0; i < shelf.length; i++) {
     if (bookTitle === shelf[i].title) {
-      output = true
-    } else {
-// why should you not reassign output to false?
-        return false
+    onShelf = true;
   }
-// return output (boolean)
+ } return onShelf
 }
+
 
 
 // console.log(bookTitle) returning Hyperion
 // console.log(shelf); logging array of objects
 
-}
 
 
 module.exports = {
